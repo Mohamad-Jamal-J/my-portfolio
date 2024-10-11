@@ -1,205 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/img/fav.png" type="image/x-icon">
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marlon</a>
-                </div>
+    <title>Portfolio - Mohammad Jaradat</title>
+</head>
+<body>
+<!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">Mohammad's Portfolio</a>
+        </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
+                <li class="nav__item"><a href="#datacamp" class="nav__link">DataCamp</a></li>
+            </ul>
+        </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+<main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">Hi 👋🏻,<br>I am <span class="home__title-color">Mohammad Jaradat</span><br> Back-End
+                Developer &
+                <br>Data Enthusiast</h1>
 
-                    <a href="#" class="button">Contact</a>
-                </div>
+            <a href="mailto:mo.jamal.jaradat@gmail.com" class="button">Contact via Email</a>
+        </div>
 
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+        <div class="home__social">
+            <a href="https://www.linkedin.com/in/mjaradat" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin bx-lg'></i></a>
+            <a href="https://github.com/Mohamad-Jamal-J" class="home__social-icon" target="_blank"><i class='bx bxl-github bx-lg'></i></a>
+            <a href="https://www.datacamp.com/portfolio/mojj"  class="home__social-icon"  target="_blank" style="margin-top: 6px;">
+                <img src="assets/img/datacamp-brand.svg" width="35" height="35" alt="datacamp-logo"></a>
+            <a href="https://leetcode.com/u/Mohamad_Jaradat/"  class="home__social-icon" target="_blank" style="margin-top: 6px;">
+                <img src="assets/img/leetcode.svg" width="35" height="35" alt="leetcode-logo"></a>
+        </div>
+    </section>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/badges-horiz.png" alt="About image">
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
+
+            <div>
+                <h2 class="about__subtitle">Mohammad Jaradat</h2>
+                <p class="about__text">
+                    I am a recent graduate from Birzeit University, where I graduated with distinction. Throughout my
+                    academic journey, I have acquired a diverse set of technical skills, particularly in programming and
+                    problem-solving. I am passionate about exploring new technologies and expanding my technical
+                    knowledge, both in back-end development and data-related fields.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+<section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills__container bd-grid">
+        <div>
+            <h2 class="skills__subtitle">Professional Skills</h2>
+            <p class="skills__text">I have hands-on experience with a range of software development technologies, concepts, and
+                tools to build reliable and scalable systems.</p>
+            <br>
+            <br>
+            <div class="skills__list">
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="https://www.oracle.com/java/" class="skills__icon" target="_blank">
+                            <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg"
+                                 width="36" height="36" alt="Java" />
+                        </a>
+                        <span class="skills__name">Java</span>
+                    </div>
+                </div>
+
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="https://www.python.org/" class="skills__icon" target="_blank">
+                            <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
+                                 width="36" height="36" alt="Python" />
+                        </a>
+                        <span class="skills__name">Python</span>
+                    </div>
+                </div>
+
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="https://www.figma.com/" class="skills__icon" target="_blank">
+                            <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg"
+                                 width="36" height="36" alt="Figma" />
+                        </a>
+                        <span class="skills__name">Figma</span>
+                    </div>
+                </div>
+
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="https://aws.amazon.com" class="skills__icon" target="_blank">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                                 alt="AWS" width="40" height="40" />
+                        </a>
+                        <span class="skills__name">AWS</span>
+                    </div>
+                </div>
+
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="https://pandas.pydata.org/" class="skills__icon" target="_blank">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg"
+                                 alt="Pandas" width="36" height="36" />
+                        </a>
+                        <span class="skills__name">Pandas</span>
+                    </div>
+                </div>
+
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <a href="https://postman.com" class="skills__icon" target="_blank" rel="noreferrer">
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                                 alt="Postman" width="40" height="40" />
+                        </a>
+                        <span class="skills__name">Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="assets/img/work3.jpg" alt="Work image" class="skills__img">
+        </div>
+    </div>
+</section>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+        <div class="work__container bd-grid">
+            <div class="work__data">
+                <h3 class="work__title">Fast Flight &nbsp;<i class='bx bxs-plane-alt'></i></h3>
+                <p class="work__description">Java Application implementing Dijkstra's Algorithm.</p>
+                <br>
+                <a href="https://github.com/Mohamad-Jamal-J/Fast-Flight" class="button" target="_blank">View Project</a>
+            </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="work__data">
+                <h3 class="work__title">Coins Pick Game &nbsp;<i class='bx bxs-dollar-circle' ></i></h3>
+                <p class="work__description">Java Application on Dynamic Programming.</p>
+                <br>
+                <a href="https://github.com/Mohamad-Jamal-J/CoinsGame" class="button" target="_blank">View Project</a>
+            </div>
+
+            <div class="work__data">
+                <h3 class="work__title">Write & Shine &nbsp;<i class='bx bxs-message-square-edit' ></i></h3>
+                <p class="work__description">Django Application Implementing a Blogging Website.</p>
+                <br>
+                <a href="https://github.com/Mohamad-Jamal-J/write-and-shine-gsg-mrdt" class="button" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!--===== CERTIFICATES =====-->
+    <section class="certificates section" id="certificates">
+        <h2 class="section-title">Certificates</h2>
+
+        <div class="bd-grid">
+            <div>
+                <h3>Market-Ready Developer</h3>
+                <p>GSG, October 2024</p>
+                <br>
+                <a href="#" class="button-disabled" target="_blank">View Certificate</a>
+            </div>
+
+            <div>
+                <h3>Data Literacy</h3>
+                <p>DataCamp, September 2024</p>
+                <br>
+                <a href="https://www.datacamp.com/skill-verification/DL0031514681320" class="button" target="_blank">View Certificate</a>
+            </div>
+
+            <div>
+                <h3>Associate Python Developer</h3>
+                <p>DataCamp, August 2024</p>
+                <br>
+                <a href="https://www.datacamp.com/statement-of-accomplishment/track/66d49d421bcfcce58c53d9966099b011b7dbf5bd?raw=1" class="button" target="_blank">View Certificate</a>
+            </div>
+
+            <div>
+                <h3>Associate Data Engineer</h3>
+                <p>DataCamp, June 2024</p>
+                <br>
+                <a href="https://www.datacamp.com/certificate/DEA0012355019262" class="button" target="_blank">View Certificate</a>
+            </div>
+
+            <div>
+                <h3>AWS Certified Cloud Practitioner </h3>
+                <p>Amazon Web Services, June 2024</p>
+                <br>
+                <a href="https://www.credly.com/badges/ea155b56-4783-40a5-b39f-f66166f0561f" class="button" target="_blank">View Certificate</a>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="datacamp section" id="datacamp">
+        <h2 class="section-title">DataCamp</h2>
+
+        <div class="bd-grid">
+            <div>
+                <img src="assets/img/datacamp.svg" alt="datacamp-logo">
+                <h3>Check out my Profile on DataCamp</h3>
+                <a href="https://www.datacamp.com/portfolio/mojj" class="button" target="_blank">View Profile</a>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
 </html>
